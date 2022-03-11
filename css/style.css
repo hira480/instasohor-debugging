@@ -256,3 +256,9 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+#like-text{
+  display: none;
+}
+#report-text{
+  display: none;
+}

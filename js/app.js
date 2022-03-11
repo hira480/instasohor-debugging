@@ -35,11 +35,16 @@ const switchTab = (id) => {
     document.getElementById("liked").style.display = "none";
     document.getElementById("reported").style.display = "none";
     document.getElementById("questions").style.display = "block";
+    document.getElementById('like-text').style.display = 'none';
+    document.getElementById('report-text').style.display = 'none';
+
   } else if (id === "liked") {
     document.getElementById("liked").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("reported").style.display = "none";
     document.getElementById("questions").style.display = "none";
+    document.getElementById('like-text').style.display = 'block';
+    document.getElementById('report-text').style.display = 'none';
 
     displayLikedPosts();
   } else {
@@ -47,6 +52,8 @@ const switchTab = (id) => {
     document.getElementById("posts").style.display = "none";
     document.getElementById("liked").style.display = "none";
     document.getElementById("questions").style.display = "none";
+    document.getElementById('report-text').style.display = 'block';
+    document.getElementById('like-text').style.display = 'none';
 
     displayReportedPosts();
   }
